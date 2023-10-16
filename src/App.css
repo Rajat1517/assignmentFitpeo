@@ -1,38 +1,265 @@
 .App {
+  background-color: rgba(0,0.1,0,0.1);
+}
+
+.card-item-left{
+  margin: 0;
+  padding: 8% 1vw 8% 1.5vw;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+#card-img{
+  width: 100%;
+  border-radius: 360px;
+  box-sizing: border-box;
+}
+.card-item{
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 1vh 1vw;
+  background-color: white;
+}
+
+.card-item-right{
+  width: 50%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8% 0;
+}
+
+#card-text{
+  box-sizing: border-box;
+  margin: 3.5vh 0;
+  font-size: 2vh;
+}
+
+#donut{
+  position: relative;
+  background-color: white;
+  height: 90%;
+  box-sizing: border-box;
+}
+#center-text{
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  left: 45%;
+  font-size: 1vw;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.charts{
+  margin: 2vh 1vw;
+  border-radius: 30px;
+  padding: 1%;
+  background-color: white;
+}
+
+svg{
+  margin-left: auto;
+}
+
+.chart-container{
+  box-sizing: border-box;
+}
+.sidebar{
+  text-align: left;
+  height: 100vh;
+  background-color: rgb(74, 58, 144);
+  color: aliceblue;
+  padding: 2vh 2vw;
+  position: sticky;
+  top: 0;
+}
+
+.chartbar{
+  padding: 0 2vw;
+}
+
+#navbar{
+  padding: 2vh 1vw;
+  width: 100%;
+}
+
+
+.chart-text{
+  padding: 1vh 1vw;
+}
+
+.box-img{
+  width: 6vw;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.lowerbox{
+  padding: 1vh 1vw;
+  background-color: white;
+  border-radius: 30px;
+  margin: 1vh 1vw;
+}
+
+.lowerbox-left{
+  padding: 1vh 1vw;
+  background-color: white;
+  border-radius: 30px;
+}
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input{
+  width: 50%;
+}
+
+table{
+  padding: 1vh 1vw;
+  margin: 2vh 1vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td{
+  padding: 2vh 1vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th{
+  padding: 2vh 1vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.sidebar-item{
+  margin: 3vh 0;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5vh 1vw;
+}
+
+.sidebar-item:hover{
+  background-color: rgb(108, 80, 232) ;
+  cursor: pointer;
+}
+
+#dp{
+  width: 3vw;
+  border-radius: 360px;
+}
+
+.side-flex{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 95vh;
 }
 
-.App-link {
-  color: #61dafb;
+.profile{
+
+  border-radius: 5px;
+  padding: 1vh 0 0 0;
+  margin-top: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.profile:hover{
+  background-color: rgb(131, 118, 189)  ;
+}
+
+
+.button-right-side{
+    background-color: rgba(0,0.1,0,0.1);
+    color: grey;
+    border-radius: 10px;
+    border: 0px;
+    padding: 1vh 1vw;
+}
+
+.button-right-side:hover{
+    background-color: white;
+}
+
+#search{
+  margin-left: auto;
+}
+
+#button-nav{
+  display: none;
+}
+
+#search-nav{
+  display: inline-block;
+}
+
+
+#visible-mobile{
+  width: 100%;
+  text-align: left;
+  height: 100vh;
+  background-color: rgb(74, 58, 144);
+  color: aliceblue;
+  padding: 2vh 2vw;
+  display: none;
+}
+
+@media screen and (max-width: 997px) {
+
+  .sidebar{
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  #navbar{
+    padding: 2vh 2vw;
+  }
+
+  #button-nav{
+      display: inline-block;
+      margin-left: auto;
+  }
+
+  #search-nav{
+    display: none;
+  }
+  #dp{
+    width: 20%;
+  }
+
+  .cards{
+    box-sizing: border-box;
+    width: 80%;
+    margin: 1vh auto;
+  }
+  .card-item-right{
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10% 0;
+  }
+  
+  .chart-container{
+    width: 90%;
+    margin: 1vh auto;
+    box-sizing: border-box;
+  }
+
+  #center-text{
+    position: absolute;
+    top: 55%;
+    z-index: 2;
+    left: 45%;
+    font-size: 4vw;
+  }
+  
+  .box-img{
+      width: 20%;
   }
 }
