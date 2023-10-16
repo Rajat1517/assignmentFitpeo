@@ -5,7 +5,7 @@ export default function Navbar(props) {
     return (
         <div >
             <nav id="navbar" className="navbar  justify-content-between">
-                <a className="navbar-brand">Hi, Shahrukh!</a>
+                <h1 className="navbar-brand">Hi, Shahrukh!</h1>
                 <button id="button-nav" className='button-right-side' onClick={()=>{
                             props.setMobile(props.mobile==='inline-block'?'none':'inline-block');
                         }}>Menu</button>
